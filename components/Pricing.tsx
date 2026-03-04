@@ -1,0 +1,127 @@
+import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
+
+export function Pricing() {
+  const plans = [
+    {
+      name: "Starter",
+      description: "Perfect for exploring AI capabilities with your team.",
+      price: "$0",
+      duration: "/month",
+      features: [
+        "100 AI model queries per day",
+        "Access to standard open-source models",
+        "Basic team collaboration workspace",
+        "Community forum support",
+      ],
+      buttonText: "Start for Free",
+      isPopular: false,
+    },
+    {
+      name: "Pro",
+      description: "For professionals needing advanced AI processing power.",
+      price: "$29",
+      duration: "/month",
+      features: [
+        "Unlimited AI queries with fast processing",
+        "Full access to GPT-4 & Claude 3.5",
+        "Advanced predictive analytics dashboard",
+        "Priority 24/7 email & chat support",
+        "Custom REST API integrations",
+      ],
+      buttonText: "Upgrade to Pro",
+      isPopular: true,
+    },
+    {
+      name: "Enterprise",
+      description: "Custom AI scaling solutions for large organizations.",
+      price: "Custom",
+      duration: "",
+      features: [
+        "Custom AI model fine-tuning & training",
+        "Dedicated private cloud infrastructure",
+        "SSO, SOC2 compliance & advanced security",
+        "Dedicated account manager & success team",
+        "Unlimited API access & rate limits",
+      ],
+      buttonText: "Contact Sales",
+      isPopular: false,
+    },
+  ];
+
+  return (
+    <section className="relative w-full py-24 bg-[#0a0a0f] overflow-hidden">
+      {/* Dynamic Background glowing effects matching the hero */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] h-[400px] bg-[#4de172]/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] bg-[#2dd4bf]/5 blur-[120px] rounded-full pointer-events-none" />
+
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 z-10">
+        <div className="text-center max-w-3xl mx-auto mb-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6">
+            <span className="w-2 h-2 rounded-full bg-[#2dd4bf] animate-pulse shadow-[0_0_10px_#2dd4bf]" />
+            <span className="text-sm font-medium text-gray-300">Simple & Transparent</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
+            Future-Proof <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf]">Pricing</span>
+          </h2>
+          <p className="text-lg sm:text-xl text-gray-400 leading-relaxed">
+            Scale your AI infrastructure with flexible plans designed for ultimate performance. Choose the power you need, when you need it.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
+          {plans.map((plan, index) => (
+            <div
+              key={plan.name}
+              className={`relative bg-white/5 backdrop-blur-xl rounded-3xl p-8 transition-all hover:-translate-y-2 duration-300 ${plan.isPopular
+                  ? "border-2 border-[#4de172]/50 shadow-[0_0_40px_rgba(77,225,114,0.1)] md:-mt-8 md:mb-8 bg-gradient-to-b from-white/10 to-transparent"
+                  : "border border-white/10 hover:border-white/20 hover:bg-white/10"
+                }`}
+            >
+              {plan.isPopular && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#4de172] to-[#2dd4bf] text-black text-sm font-bold px-6 py-1.5 rounded-full shadow-[0_0_20px_rgba(77,225,114,0.4)] whitespace-nowrap">
+                  Most Popular
+                </div>
+              )}
+
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold text-white mb-3">{plan.name}</h3>
+                <p className="text-gray-400 text-sm h-10 leading-relaxed">{plan.description}</p>
+              </div>
+
+              <div className="mb-8 flex items-baseline gap-1">
+                <span className="text-4xl md:text-5xl font-extrabold text-white">
+                  {plan.price}
+                </span>
+                {plan.duration && (
+                  <span className="text-gray-400 text-lg font-medium">{plan.duration}</span>
+                )}
+              </div>
+
+              <ul className="space-y-4 mb-10">
+                {plan.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-3">
+                    <div className="mt-0.5 bg-[#4de172]/10 rounded-full p-1 border border-[#4de172]/20 shrink-0">
+                      <Check className="w-3.5 h-3.5 text-[#4de172]" strokeWidth={3} />
+                    </div>
+                    <span className="text-gray-300 text-sm leading-relaxed">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Button
+                className={`cursor-pointer w-full rounded-full h-12 text-base font-bold transition-all duration-300 shadow-lg ${plan.isPopular
+                    ? "cursor-pointer bg-gradient-to-r from-[#4de172] to-[#2dd4bf] hover:from-[#3dcc60] hover:to-[#22b5a1] text-black shadow-[0_0_20px_rgba(77,225,114,0.3)] hover:shadow-[0_0_30px_rgba(77,225,114,0.5)] border-0"
+                    : "bg-white/5 hover:bg-white/10 text-white border border-white/10 backdrop-blur-md"
+                  }`}
+                variant={plan.isPopular ? "default" : "outline"}
+              >
+                {plan.buttonText}
+              </Button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
