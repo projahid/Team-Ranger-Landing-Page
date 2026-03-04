@@ -39,12 +39,12 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <Button className="w-full sm:w-auto bg-[#4de172] hover:bg-[#3dcc60] text-black font-bold rounded-full px-8 h-14 text-lg transition-all shadow-[0_0_20px_rgba(77,225,114,0.3)] hover:shadow-[0_0_30px_rgba(77,225,114,0.5)] group">
+            <Button className="cursor-pointer w-full sm:w-auto bg-[#4de172] hover:bg-[#3dcc60] text-black font-bold rounded-full px-8 h-14 text-lg transition-all shadow-[0_0_20px_rgba(77,225,114,0.3)] hover:shadow-[0_0_30px_rgba(77,225,114,0.5)] group">
               Get Started for Free
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
 
-            <Button variant="outline" className="w-full sm:w-auto bg-white/5 hover:bg-white/10 text-white border-white/20 hover:border-white/40 font-semibold rounded-full px-8 h-14 text-lg backdrop-blur-sm transition-all">
+            <Button variant="outline" className="cursor-pointer w-full sm:w-auto bg-white/5 text-white border-white/20 font-semibold rounded-full px-8 h-14 text-lg backdrop-blur-sm transition-all">
               Watch Demo
             </Button>
           </div>
