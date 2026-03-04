@@ -50,21 +50,21 @@ export function Pricing() {
   ];
 
   return (
-    <section className="relative w-full py-24 bg-[#0a0a0f] overflow-hidden">
+    <section className="relative w-full py-16 md:py-24 bg-[#0a0a0f] overflow-hidden">
       {/* Dynamic Background glowing effects matching the hero */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] h-[400px] bg-[#4de172]/5 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] bg-[#2dd4bf]/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] md:w-full md:max-w-[800px] h-[300px] md:h-[400px] bg-[#4de172]/5 blur-[80px] md:blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute -top-1/4 -right-1/4 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-[#2dd4bf]/5 blur-[80px] md:blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6 font-medium text-xs sm:text-sm">
             <span className="w-2 h-2 rounded-full bg-[#2dd4bf] animate-pulse shadow-[0_0_10px_#2dd4bf]" />
-            <span className="text-sm font-medium text-gray-300">Simple & Transparent</span>
+            <span className="text-gray-300">Simple & Transparent</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
-            Future-Proof <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf]">Pricing</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 md:mb-6">
+            Future-Proof <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block sm:inline mt-1 sm:mt-0">Pricing</span>
           </h2>
-          <p className="text-lg sm:text-xl text-gray-400 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed px-4 md:px-0">
             Scale your AI infrastructure with flexible plans designed for ultimate performance. Choose the power you need, when you need it.
           </p>
         </div>
@@ -74,8 +74,8 @@ export function Pricing() {
             <div
               key={plan.name}
               className={`relative bg-white/5 backdrop-blur-xl rounded-3xl p-8 transition-all hover:-translate-y-2 duration-300 ${plan.isPopular
-                  ? "border-2 border-[#4de172]/50 shadow-[0_0_40px_rgba(77,225,114,0.1)] md:-mt-8 md:mb-8 bg-gradient-to-b from-white/10 to-transparent"
-                  : "border border-white/10 hover:border-white/20 hover:bg-white/10"
+                ? "border-2 border-[#4de172]/50 shadow-[0_0_40px_rgba(77,225,114,0.1)] md:-mt-8 md:mb-8 bg-gradient-to-b from-white/10 to-transparent"
+                : "border border-white/10 hover:border-white/20 hover:bg-white/10"
                 }`}
             >
               {plan.isPopular && (
@@ -111,8 +111,8 @@ export function Pricing() {
 
               <Button
                 className={`cursor-pointer w-full rounded-full h-12 text-base font-bold transition-all duration-300 shadow-lg ${plan.isPopular
-                    ? "cursor-pointer bg-gradient-to-r from-[#4de172] to-[#2dd4bf] hover:from-[#3dcc60] hover:to-[#22b5a1] text-black shadow-[0_0_20px_rgba(77,225,114,0.3)] hover:shadow-[0_0_30px_rgba(77,225,114,0.5)] border-0"
-                    : "bg-white/5 hover:bg-white/10 text-white border border-white/10 backdrop-blur-md"
+                  ? "cursor-pointer bg-gradient-to-r from-[#4de172] to-[#2dd4bf] hover:from-[#3dcc60] hover:to-[#22b5a1] text-black shadow-[0_0_20px_rgba(77,225,114,0.3)] hover:shadow-[0_0_30px_rgba(77,225,114,0.5)] border-0"
+                  : "bg-white/5 hover:bg-white/10 text-white border border-white/10 backdrop-blur-md"
                   }`}
                 variant={plan.isPopular ? "default" : "outline"}
               >

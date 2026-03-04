@@ -3,22 +3,22 @@ import { Layers, Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } f
 
 export function Footer() {
   return (
-    <footer className="bg-[#050508] text-gray-400 py-16 border-t border-white/5 mt-auto relative overflow-hidden">
+    <footer className="bg-[#050508] text-gray-400 py-12 md:py-16 border-t border-white/5 mt-auto relative overflow-hidden">
       {/* Background Glow effects */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#10b981]/5 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#4de172]/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-[#10b981]/5 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-64 md:w-96 h-64 md:h-96 bg-[#4de172]/5 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-12 md:mb-16">
           {/* Brand Section */}
-          <div className="space-y-6 lg:pr-8">
+          <div className="space-y-6 lg:pr-8 sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 transition-transform hover:scale-105 inline-flex">
               <div className="relative flex items-center justify-center w-10 h-10 bg-[#10b981] rounded-lg shadow-[0_0_15px_rgba(16,185,129,0.4)]">
                 <Layers className="text-white w-6 h-6" />
               </div>
               <span className="text-xl font-bold text-white tracking-tight">Team Ranker</span>
             </Link>
-            <p className="text-sm leading-relaxed text-gray-400">
+            <p className="text-sm leading-relaxed text-gray-400 max-w-sm">
               Elevate your team's performance with our industry-leading ranking and analytics platform. Build better teams, together.
             </p>
             <div className="flex gap-3 pt-2">
@@ -38,7 +38,7 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6">
             <h3 className="text-white font-semibold text-lg tracking-wide">Quick Links</h3>
             <ul className="space-y-3 text-sm">
               <li><Link href="#features" className="hover:text-[#10b981] hover:translate-x-1 inline-block transition-all duration-300">Our Features</Link></li>
@@ -49,7 +49,7 @@ export function Footer() {
           </div>
 
           {/* Resources */}
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6">
             <h3 className="text-white font-semibold text-lg tracking-wide">Resources</h3>
             <ul className="space-y-3 text-sm">
               <li><Link href="#" className="hover:text-[#10b981] hover:translate-x-1 inline-block transition-all duration-300">Help Center</Link></li>

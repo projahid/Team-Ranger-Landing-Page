@@ -29,39 +29,39 @@ export function Solution() {
   ];
 
   return (
-    <section className="relative w-full py-32 bg-[#0a0a0f] overflow-hidden">
+    <section className="relative w-full py-16 md:py-32 bg-[#0a0a0f] overflow-hidden">
       {/* Dynamic Background Glowing Effects - Stronger Teals and Greens */}
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[800px] h-[800px] bg-[#4de172]/5 blur-[150px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[800px] h-[800px] bg-[#2dd4bf]/5 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[#4de172]/5 blur-[100px] md:blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-[#2dd4bf]/5 blur-[100px] md:blur-[150px] rounded-full pointer-events-none" />
 
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 z-10">
 
         {/* Solution Header Section */}
-        <div className="flex flex-col lg:flex-row items-center gap-16 mb-24 max-w-7xl mx-auto">
-          <div className="flex-1 text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#4de172]/10 border border-[#4de172]/20 backdrop-blur-md mb-6 animate-in fade-in slide-in-from-left-8 duration-1000">
+        <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16 mb-16 md:mb-24 max-w-7xl mx-auto">
+          <div className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#4de172]/10 border border-[#4de172]/20 backdrop-blur-md mb-6 animate-in fade-in slide-in-from-left-8 duration-1000 text-xs sm:text-sm">
               <span className="w-2 h-2 rounded-full bg-[#4de172] animate-pulse shadow-[0_0_10px_#4de172]" />
-              <span className="text-sm font-medium text-[#4de172]">The Solution</span>
+              <span className="font-medium text-[#4de172]">The Solution</span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6 animate-in fade-in slide-in-from-left-8 duration-1000 delay-100">
-              Transform Complexity into <br className="hidden lg:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf]">Clarity with AI</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 md:mb-6 animate-in fade-in slide-in-from-left-8 duration-1000 delay-100">
+              Transform Complexity into <br className="hidden md:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block md:inline mt-2 md:mt-0">Clarity with AI</span>
             </h2>
 
-            <p className="text-lg sm:text-xl text-gray-400 leading-relaxed mb-8 animate-in fade-in slide-in-from-left-8 duration-1000 delay-200">
+            <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed mb-8 px-4 lg:px-0 animate-in fade-in slide-in-from-left-8 duration-1000 delay-200">
               We replace fragmented, manual processes with a unified AI infrastructure. Experience unparalleled speed, accuracy, and insight generation that scales effortlessly with your business.
             </p>
 
-            <ul className="space-y-4 animate-in fade-in slide-in-from-left-8 duration-1000 delay-300">
+            <ul className="space-y-4 text-left w-full lg:w-auto px-4 sm:px-8 lg:px-0 animate-in fade-in slide-in-from-left-8 duration-1000 delay-300">
               {[
                 "10x faster data processing and analysis",
                 "Reduce operational overhead by up to 60%",
                 "Zero-configuration deployment"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#2dd4bf]" />
-                  <span className="text-gray-300 text-lg">{item}</span>
+                  <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-[#2dd4bf] shrink-0" />
+                  <span className="text-gray-300 text-sm md:text-lg">{item}</span>
                 </li>
               ))}
             </ul>

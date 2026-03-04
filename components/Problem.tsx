@@ -35,20 +35,20 @@ export function Problem() {
   ];
 
   return (
-    <section className="relative w-full py-24 bg-[#050508] overflow-hidden border-b border-white/5">
+    <section className="relative w-full py-16 md:py-24 bg-[#050508] overflow-hidden border-b border-white/5">
       {/* Subtle Red/Orange glow to indicate "Problem" area, contrasting with the Green/Teal AI theme */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-red-500/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-red-500/5 blur-[80px] md:blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 backdrop-blur-md mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 backdrop-blur-md mb-6 font-medium text-xs sm:text-sm">
             <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse shadow-[0_0_10px_#ef4444]" />
-            <span className="text-sm font-medium text-red-200">The Challenge</span>
+            <span className="text-red-200">The Challenge</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 md:mb-6">
             The <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-400">Bottlenecks</span> of Traditional Workflows
           </h2>
-          <p className="text-lg sm:text-xl text-gray-400 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed px-4 md:px-0">
             Before AI, scaling operations meant scaling complexity. Teams struggle with fragmented tools, manual processes, and delayed insights.
           </p>
         </div>

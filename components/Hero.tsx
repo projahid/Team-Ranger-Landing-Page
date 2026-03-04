@@ -20,21 +20,21 @@ export function Hero() {
       </div>
 
       {/* Content Container */}
-      <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-center text-left pt-20">
-        <div className="max-w-3xl animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8">
+      <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center md:items-start justify-center text-center md:text-left pt-28 pb-10">
+        <div className="max-w-3xl animate-in fade-in slide-in-from-bottom-8 duration-1000 flex flex-col items-center md:items-start">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6 md:mb-8 text-xs sm:text-sm">
             <span className="w-2 h-2 rounded-full bg-[#4de172] animate-pulse shadow-[0_0_10px_#4de172]" />
-            <span className="text-sm font-medium text-gray-300">The #1 Platform for Team Management</span>
+            <span className="font-medium text-gray-300 line-clamp-1">The #1 Platform for Team Management</span>
           </div>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight mb-6 leading-[1.1]">
-            Elevate Your <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold text-white tracking-tight mb-4 md:mb-6 leading-[1.15] md:leading-[1.1]">
+            Elevate Your <br className="hidden md:block" />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block md:inline mt-2 md:mt-0">
               Team's Potential
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-400 mb-10 max-w-2xl leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-8 md:mb-10 max-w-2xl leading-relaxed px-4 md:px-0">
             Discover the most powerful and intuitive platform to evaluate, rank, and manage your teams. Drive performance with data-driven insights and beautifully crafted dashboards.
           </p>
 

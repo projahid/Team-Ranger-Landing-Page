@@ -47,21 +47,21 @@ export function Features() {
   ];
 
   return (
-    <section className="relative w-full py-24 bg-[#0a0a0f] overflow-hidden">
+    <section className="relative w-full py-16 md:py-24 bg-[#0a0a0f] overflow-hidden">
       {/* Dynamic Background Glowing Effects */}
-      <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-[#4de172]/5 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-[#2dd4bf]/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/4 left-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#4de172]/5 blur-[80px] md:blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-1/4 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-[#2dd4bf]/5 blur-[80px] md:blur-[120px] rounded-full pointer-events-none" />
 
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 z-10">
-        <div className="text-center max-w-3xl mx-auto mb-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6">
+        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20 animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6 font-medium text-xs sm:text-sm">
             <span className="w-2 h-2 rounded-full bg-[#4de172] animate-pulse shadow-[0_0_10px_#4de172]" />
-            <span className="text-sm font-medium text-gray-300">Core Capabilities</span>
+            <span className="text-gray-300">Core Capabilities</span>
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-6">
-            Intelligence that <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf]">Empowers</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 md:mb-6">
+            Intelligence that <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block sm:inline mt-1 sm:mt-0">Empowers</span>
           </h2>
-          <p className="text-lg sm:text-xl text-gray-400 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed px-4 md:px-0">
             Discover a comprehensive suite of AI tools designed to elevate your workflow, secure your data, and unlock unprecedented creative potential.
           </p>
         </div>

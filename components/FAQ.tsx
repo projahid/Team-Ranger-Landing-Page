@@ -34,17 +34,17 @@ export function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 relative overflow-hidden bg-[#050508]">
+    <section id="faq" className="py-16 md:py-24 relative overflow-hidden bg-[#050508]">
       {/* Background decorations */}
-      <div className="absolute top-1/2 left-0 w-72 h-72 bg-[#10b981]/5 rounded-full blur-[100px] -translate-y-1/2" />
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#4de172]/5 rounded-full blur-[120px]" />
+      <div className="absolute top-1/2 left-0 w-48 md:w-72 h-48 md:h-72 bg-[#10b981]/5 rounded-full blur-[80px] md:blur-[100px] -translate-y-1/2 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-64 md:w-96 h-64 md:h-96 bg-[#4de172]/5 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl mx-auto text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16 space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight">
             Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10b981] to-[#4de172]">Questions</span>
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="text-gray-400 text-base sm:text-lg">
             Everything you need to know about the product and billing.
           </p>
         </div>
