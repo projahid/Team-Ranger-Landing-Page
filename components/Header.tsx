@@ -22,7 +22,7 @@ export function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-[#0a0a0f]/90 backdrop-blur-md border-b border-white/5 py-4" : "bg-transparent py-6"}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? " py-4" : "bg-transparent py-6"}`}>
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-2 transition-transform hover:scale-105">
