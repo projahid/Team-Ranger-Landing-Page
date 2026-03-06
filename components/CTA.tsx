@@ -17,7 +17,7 @@ export function CTA() {
             alt="CTA Presentation"
             width={1200}
             height={800}
-            className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+            className="w-full h-auto object-cover scale-[1.03] md:scale-[1.05] transition-transform duration-700 group-hover:scale-[1.08] md:group-hover:scale-110"
             priority
           />
 
