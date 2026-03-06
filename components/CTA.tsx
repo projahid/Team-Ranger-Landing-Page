@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 
+
 export function CTA() {
   return (
     <section className="relative w-full py-16 md:py-24 bg-[#0a0a0f] overflow-hidden">
@@ -11,13 +12,23 @@ export function CTA() {
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 z-10 text-center">
         <div className="relative w-full max-w-6xl mx-auto rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-[0_0_50px_rgba(77,225,114,0.1)] group">
 
-          {/* CTA Image */}
+          {/* Desktop Image */}
           <Image
-            src="/Image/CTA_Image.png"
-            alt="CTA Presentation"
+            src="/Image/CTA_Image-Desktop.png"
+            alt="CTA Presentation Desktop"
             width={1200}
             height={800}
-            className="w-full h-auto object-cover scale-[1.03] md:scale-[1.05] transition-transform duration-700 group-hover:scale-[1.08] md:group-hover:scale-110"
+            className="hidden md:block w-full h-auto object-cover scale-[1.03] md:scale-[1.05] transition-transform duration-700 group-hover:scale-[1.08] md:group-hover:scale-110"
+            priority
+          />
+
+          {/* Mobile Phone Image */}
+          <Image
+            src="/Image/CTA_Image_Phone.png"
+            alt="CTA Presentation Mobile"
+            width={800}
+            height={1200}
+            className="block md:hidden w-full h-auto object-cover scale-[1.03] transition-transform duration-700 group-hover:scale-[1.08]"
             priority
           />
 

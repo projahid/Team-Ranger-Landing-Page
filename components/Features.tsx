@@ -1,46 +1,46 @@
-import { Brain, Zap, Shield, Activity, Code, Sparkles } from "lucide-react";
+import { Activity, FileText, Mail, Link as LinkIcon, LayoutDashboard, MessageSquare } from "lucide-react";
 
 export function Features() {
   const features = [
     {
-      title: "Advanced AI Modeling",
-      description: "Leverage state-of-the-art machine learning models trained on vast datasets to generate accurate and insightful results for your complex problems.",
-      icon: Brain,
+      title: "Project Management",
+      description: "Easily track Total, Pending, Ongoing, and Completed projects in one unified dashboard.",
+      icon: Activity,
       color: "from-[#4de172] to-[#3dcc60]",
       shadow: "shadow-[0_0_20px_rgba(77,225,114,0.3)]",
     },
     {
-      title: "Real-time Processing",
-      description: "Experience lightning-fast processing speeds. Our optimized infrastructure ensures your data is analyzed and returned with zero noticeable latency.",
-      icon: Zap,
+      title: "Content Tracking",
+      description: "Manage all your content. Filter by name or title and keep your team aligned effortlessly.",
+      icon: FileText,
       color: "from-[#2dd4bf] to-[#22b5a1]",
       shadow: "shadow-[0_0_20px_rgba(45,212,191,0.3)]",
     },
     {
-      title: "Enterprise-Grade Security",
-      description: "Your data is protected by military-grade encryption and SOC2 compliant protocols, ensuring complete privacy and control over your AI interactions.",
-      icon: Shield,
+      title: "Email Campaigns",
+      description: "Keep track of all your emails. Filter by name or email to quickly find exactly what you need.",
+      icon: Mail,
       color: "from-[#4de172] to-[#2dd4bf]",
       shadow: "shadow-[0_0_20px_rgba(77,225,114,0.3)]",
     },
     {
-      title: "Actionable Analytics",
-      description: "Transform raw data into beautiful, intuitive dashboards. Uncover hidden trends and make data-driven decisions with unparalleled clarity.",
-      icon: Activity,
+      title: "Backlink Monitoring",
+      description: "Monitor your monthly backlinks and track your SEO performance over time with ease.",
+      icon: LinkIcon,
       color: "from-[#2dd4bf] to-[#4de172]",
       shadow: "shadow-[0_0_20px_rgba(45,212,191,0.3)]",
     },
     {
-      title: "Seamless Integration APIs",
-      description: "Connect our AI engine directly into your existing workflow using our robust, developer-friendly REST and GraphQL APIs.",
-      icon: Code,
+      title: "Detailed Dashboards",
+      description: "Get a bird's-eye view of your team's progress with intuitive, real-time grids and customizable columns.",
+      icon: LayoutDashboard,
       color: "from-[#4de172] to-[#3dcc60]",
       shadow: "shadow-[0_0_20px_rgba(77,225,114,0.3)]",
     },
     {
-      title: "Creative Generation",
-      description: "Push the boundaries of creativity. Generate high-quality content, code, and insights that empower your team to innovate faster.",
-      icon: Sparkles,
+      title: "Dedicated Support",
+      description: "24/7 Team Ranker Support via our seamless chat system to help you whenever you need.",
+      icon: MessageSquare,
       color: "from-[#2dd4bf] to-[#22b5a1]",
       shadow: "shadow-[0_0_20px_rgba(45,212,191,0.3)]",
     },
@@ -59,10 +59,10 @@ export function Features() {
             <span className="text-gray-300">Core Capabilities</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 md:mb-6">
-            Intelligence that <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block sm:inline mt-1 sm:mt-0">Empowers</span>
+            Tools that <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block sm:inline mt-1 sm:mt-0">Empower Teams</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed px-4 md:px-0">
-            Discover a comprehensive suite of AI tools designed to elevate your workflow, secure your data, and unlock unprecedented creative potential.
+            Discover a comprehensive suite of tools designed to manage your projects, streamline communications, and boost your SEO tracking.
           </p>
         </div>
 

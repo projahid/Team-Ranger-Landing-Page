@@ -3,34 +3,34 @@ import { AlertCircle, Clock, TrendingDown, Database, FileX, Users } from "lucide
 export function Problem() {
   const problems = [
     {
-      title: "Data Overload & Silos",
-      description: "Teams are drowning in fragmented data across multiple platforms, making it impossible to get a unified view of performance or customer behavior.",
+      title: "Scattered Projects",
+      description: "Losing track of pending, ongoing, and completed tasks across multiple disconnected tools, making project management a nightmare.",
       icon: Database,
     },
     {
-      title: "Manual & Slow Analysis",
-      description: "Extracting insights requires hours of manual spreadsheet work or depending on an over-burdened analytics team, causing expensive delays.",
-      icon: Clock,
+      title: "Unorganized Content",
+      description: "Struggling to find, manage, and filter content titles and drafts, leading to misaligned strategies and wasted resources.",
+      icon: FileX,
     },
     {
-      title: "Missed Opportunities",
-      description: "Without real-time predictive capabilities, businesses react to past events rather than proactively anticipating market shifts or customer needs.",
-      icon: TrendingDown,
-    },
-    {
-      title: "Inconsistent Decision Making",
-      description: "Different departments rely on different metrics and interpretations, leading to misaligned strategies and wasted resources.",
-      icon: Users,
-    },
-    {
-      title: "High Error Rates",
-      description: "Manual data entry and complex workflow routing are prone to human error, resulting in compliance risks and unhappy customers.",
+      title: "Lost Emails",
+      description: "Important communications and outreach emails get buried, resulting in missed opportunities and delayed responses.",
       icon: AlertCircle,
     },
     {
-      title: "Stale Intelligence",
-      description: "By the time reports are generated and reviewed, the information is often outdated, rendering the insights useless for immediate action.",
-      icon: FileX,
+      title: "Blind SEO & Backlinks",
+      description: "No clear visibility into monthly backlink performance or real-time analytics to boost your search engine rankings.",
+      icon: TrendingDown,
+    },
+    {
+      title: "Lack of Clear Ownership",
+      description: "Confusion over who is handling which project status, leading to inconsistent decision making and dropped tasks.",
+      icon: Users,
+    },
+    {
+      title: "Disconnected Communication",
+      description: "Support requests and team chats are spread thin, rendering team communication slow and frustrating for everyone involved.",
+      icon: Clock,
     },
   ];
 
@@ -46,10 +46,10 @@ export function Problem() {
             <span className="text-[#4de172]">The Challenge</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 md:mb-6">
-            The <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf]">Bottlenecks</span> of Traditional Workflows
+            The <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf]">Bottlenecks</span> of Scattered Tools
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed px-4 md:px-0">
-            Before AI, scaling operations meant scaling complexity. Teams struggle with fragmented tools, manual processes, and delayed insights.
+            Scaling your operations usually means scaling complexity. Teams struggle with fragmented SEO tools, manual content tracking, and disconnected project insights.
           </p>
         </div>
 

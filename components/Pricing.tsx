@@ -5,13 +5,13 @@ export function Pricing() {
   const plans = [
     {
       name: "Starter",
-      description: "Perfect for exploring AI capabilities with your team.",
+      description: "Perfect for organizing small teams securely.",
       price: "$0",
       duration: "/month",
       features: [
-        "100 AI model queries per day",
-        "Access to standard open-source models",
-        "Basic team collaboration workspace",
+        "Manage up to 3 active projects",
+        "Track up to 50 content drafts",
+        "Monitor 100 backlinks per month",
         "Community forum support",
       ],
       buttonText: "Start for Free",
@@ -19,30 +19,30 @@ export function Pricing() {
     },
     {
       name: "Pro",
-      description: "For professionals needing advanced AI processing power.",
+      description: "For growing teams needing comprehensive SEO tracking.",
       price: "$29",
       duration: "/month",
       features: [
-        "Unlimited AI queries with fast processing",
-        "Full access to GPT-4 & Claude 3.5",
-        "Advanced predictive analytics dashboard",
-        "Priority 24/7 email & chat support",
-        "Custom REST API integrations",
+        "Unlimited active projects",
+        "Track unlimited content & emails",
+        "Monitor up to 5,000 backlinks/month",
+        "Advanced SEO dashboard analytics",
+        "Priority 24/7 chat support",
       ],
       buttonText: "Upgrade to Pro",
       isPopular: true,
     },
     {
       name: "Enterprise",
-      description: "Custom AI scaling solutions for large organizations.",
+      description: "Custom management solutions for large organizations.",
       price: "Custom",
       duration: "",
       features: [
-        "Custom AI model fine-tuning & training",
+        "Custom backlink tracking volume",
         "Dedicated private cloud infrastructure",
-        "SSO, SOC2 compliance & advanced security",
+        "Advanced team permissions & roles",
         "Dedicated account manager & success team",
-        "Unlimited API access & rate limits",
+        "Unlimited API access & integrations",
       ],
       buttonText: "Contact Sales",
       isPopular: false,
@@ -65,7 +65,7 @@ export function Pricing() {
             Future-Proof <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block sm:inline mt-1 sm:mt-0">Pricing</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed px-4 md:px-0">
-            Scale your AI infrastructure with flexible plans designed for ultimate performance. Choose the power you need, when you need it.
+            Scale your team management and SEO tracking with flexible plans designed for ultimate performance. Choose the power you need, when you need it.
           </p>
         </div>
 

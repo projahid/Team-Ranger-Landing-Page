@@ -3,26 +3,26 @@ import { CheckCircle2, Zap, BrainCircuit, BarChart3, ShieldCheck, Workflow } fro
 export function Solution() {
   const solutions = [
     {
-      title: "Unified Intelligence Hub",
-      description: "Our AI platform seamlessly connects to your existing data silos, automatically structuring and unifying information into a single source of truth.",
+      title: "Unified Tracking Hub",
+      description: "Team Ranker seamlessly connects your projects, contents, and emails, restructuring information into a single source of truth.",
       icon: DatabaseIcon, // Custom component defined below
       glow: "group-hover:shadow-[0_0_30px_rgba(77,225,114,0.3)]",
     },
     {
-      title: "Instant Predictive Analytics",
-      description: "Replace days of manual analysis with instant, AI-driven insights. Query your data in natural language and get beautiful, actionable charts in seconds.",
+      title: "Instant SEO Analytics",
+      description: "Replace days of manual backlink analysis with our instant tracking dashboards. Get beautiful, actionable charts in seconds.",
       icon: BarChart3,
       glow: "group-hover:shadow-[0_0_30px_rgba(45,212,191,0.3)]",
     },
     {
-      title: "Proactive Opportunity Detection",
-      description: "Our models continuously monitor your workflows to identify trends, anomalies, and opportunities before they become obvious to the human eye.",
+      title: "Project Opportunity Detection",
+      description: "Our platform continuously monitors your ongoing and pending projects to identify ownership gaps before they become bottlenecks.",
       icon: TargetIcon, // Custom component
       glow: "group-hover:shadow-[0_0_30px_rgba(77,225,114,0.3)]",
     },
     {
-      title: "Automated Workflows",
-      description: "Eliminate manual routing and approvals. The engine intelligently categorizes, routes, and even resolves routine tasks without human intervention.",
+      title: "Centralized Chat Support",
+      description: "Eliminate scattered communication. Our built-in support chat resolves your team's issues without ever leaving the dashboard.",
       icon: Workflow,
       glow: "group-hover:shadow-[0_0_30px_rgba(45,212,191,0.3)]",
     },
@@ -46,18 +46,18 @@ export function Solution() {
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 md:mb-6 animate-in fade-in slide-in-from-left-8 duration-1000 delay-100">
               Transform Complexity into <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block md:inline mt-2 md:mt-0">Clarity with AI</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block md:inline mt-2 md:mt-0">Clarity with Team Ranker</span>
             </h2>
 
             <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed mb-8 px-4 lg:px-0 animate-in fade-in slide-in-from-left-8 duration-1000 delay-200">
-              We replace fragmented, manual processes with a unified AI infrastructure. Experience unparalleled speed, accuracy, and insight generation that scales effortlessly with your business.
+              We replace fragmented, manual processes with a unified platform. Experience unparalleled tracking, SEO insights, and team management that scales effortlessly with your business.
             </p>
 
             <ul className="space-y-4 text-left w-full lg:w-auto px-4 sm:px-8 lg:px-0 animate-in fade-in slide-in-from-left-8 duration-1000 delay-300">
               {[
-                "10x faster data processing and analysis",
-                "Reduce operational overhead by up to 60%",
-                "Zero-configuration deployment"
+                "Comprehensive project tracking and grids",
+                "Real-time monthly backlink analytics",
+                "Dedicated team support system"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3">
                   <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-[#2dd4bf] shrink-0" />

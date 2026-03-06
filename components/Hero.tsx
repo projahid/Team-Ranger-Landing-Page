@@ -24,18 +24,18 @@ export function Hero() {
         <div className="max-w-3xl animate-in fade-in slide-in-from-bottom-8 duration-1000 flex flex-col items-center md:items-start">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6 md:mb-8 text-xs sm:text-sm">
             <span className="w-2 h-2 rounded-full bg-[#4de172] animate-pulse shadow-[0_0_10px_#4de172]" />
-            <span className="font-medium text-gray-300 line-clamp-1">The #1 Platform for Team Management</span>
+            <span className="font-medium text-gray-300 line-clamp-1">The #1 Platform for Projects & SEO</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-extrabold text-white tracking-tight mb-4 md:mb-6 leading-[1.15] md:leading-[1.1]">
-            Elevate Your <br className="hidden md:block" />
+            Manage Projects & <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block md:inline mt-2 md:mt-0">
-              Team's Potential
+              Boost Rankings
             </span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-8 md:mb-10 max-w-2xl leading-relaxed px-4 md:px-0">
-            Discover the most powerful and intuitive platform to evaluate, rank, and manage your teams. Drive performance with data-driven insights and beautifully crafted dashboards.
+            The all-in-one platform for tracking projects, content, emails, and backlinks. Drive performance with data-driven insights and beautifully crafted dashboards.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4">
