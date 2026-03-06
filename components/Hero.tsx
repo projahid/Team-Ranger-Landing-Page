@@ -44,7 +44,7 @@ export function Hero() {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
 
-            <Button variant="outline" className="cursor-pointer w-full sm:w-auto bg-white/5 text-white border-white/20 font-semibold rounded-full px-8 h-14 text-lg backdrop-blur-sm transition-all">
+            <Button variant="outline" className="cursor-pointer w-full sm:w-auto hover:text-green-500 bg-black/5 text-white border-white/20 font-semibold rounded-full px-8 h-14 text-lg backdrop-blur-sm transition-all">
               Watch Demo
             </Button>
           </div>

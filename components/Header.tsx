@@ -66,7 +66,7 @@ export function Header() {
 
         {/* Action Button (Desktop) & Mobile Toggle */}
         <div className="flex items-center gap-4 relative z-[100]">
-          <Button className="hidden md:flex bg-[#4de172] hover:bg-[#3dcc60] text-black font-bold rounded-full px-8 h-10 transition-all shadow-[0_0_15px_rgba(77,225,114,0.3)] hover:shadow-[0_0_20px_rgba(77,225,114,0.5)] border-0">
+          <Button className="cursor-pointer hidden md:flex bg-[#4de172] hover:bg-[#3dcc60] text-black font-bold rounded-full px-8 h-10 transition-all shadow-[0_0_15px_rgba(77,225,114,0.3)] hover:shadow-[0_0_20px_rgba(77,225,114,0.5)] border-0">
             Login
           </Button>
 
