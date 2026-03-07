@@ -1,4 +1,7 @@
 import { CheckCircle2, Zap, BrainCircuit, BarChart3, ShieldCheck, Workflow } from "lucide-react";
+import Image from "next/image";
+
+import SiteFeatureImage from "@/public/Image/SiteFeatureImage.png"
 
 export function Solution() {
   const solutions = [
@@ -67,21 +70,21 @@ export function Solution() {
             </ul>
           </div>
 
-          <div className="flex-1 relative w-full aspect-square max-w-md lg:max-w-none animate-in fade-in slide-in-from-right-8 duration-1000">
+          <div className="flex-1 relative w-full max-w-md lg:max-w-none animate-in fade-in slide-in-from-right-8 duration-1000">
             {/* Conceptual Visual Graphic */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#4de172]/20 to-[#2dd4bf]/20 rounded-full blur-3xl" />
             <div className="relative h-full w-full border border-white/10 bg-[#0a0a0f]/50 backdrop-blur-xl rounded-3xl overflow-hidden flex items-center justify-center shadow-2xl">
-              <div className="relative w-48 h-48">
-                {/* Central AI Node */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-gradient-to-br from-[#4de172] to-[#2dd4bf] rounded-xl shadow-[0_0_50px_rgba(77,225,114,0.5)] flex items-center justify-center z-20 animate-pulse">
-                  <BrainCircuit className="w-12 h-12 text-black" strokeWidth={1.5} />
-                </div>
-                {/* Orbiting Elements */}
-                <div className="absolute inset-0 border border-white/10 rounded-full animate-[spin_10s_linear_infinite]" />
-                <div className="absolute inset-0 border border-[#2dd4bf]/30 rounded-full animate-[spin_15s_linear_infinite_reverse] scale-150" />
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#0a0a0f] border-2 border-[#4de172] rounded-full z-10" />
-                <div className="absolute bottom-1/4 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 bg-[#0a0a0f] border-2 border-[#2dd4bf] rounded-full z-10" />
+              <div>
+                <Image
+                  src={SiteFeatureImage}
+                  alt="Solution Presentation"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto object-fit transition-transform duration-700 group-hover:scale-[1.08] md:group-hover:scale-110"
+                  priority
+                />
               </div>
+
             </div>
           </div>
         </div>
