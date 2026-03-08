@@ -1,5 +1,6 @@
 import { CheckCircle2, Zap, BrainCircuit, BarChart3, ShieldCheck, Workflow } from "lucide-react";
 import Image from "next/image";
+import { Reveal } from "./Reveal";
 
 import SiteFeatureImage from "@/public/Image/SiteFeatureImage.png"
 
@@ -40,76 +41,79 @@ export function Solution() {
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 z-10">
 
         {/* Solution Header Section */}
-        <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16 mb-16 md:mb-24 max-w-7xl mx-auto">
-          <div className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#4de172]/10 border border-[#4de172]/20 backdrop-blur-md mb-6 animate-in fade-in slide-in-from-left-8 duration-1000 text-xs sm:text-sm">
-              <span className="w-2 h-2 rounded-full bg-[#4de172] animate-pulse shadow-[0_0_10px_#4de172]" />
-              <span className="font-medium text-[#4de172]">The Solution</span>
-            </div>
-
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 md:mb-6 animate-in fade-in slide-in-from-left-8 duration-1000 delay-100">
-              Transform Complexity into <br className="hidden md:block" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block md:inline mt-2 md:mt-0">Clarity with Team Ranker</span>
-            </h2>
-
-            <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed mb-8 px-4 lg:px-0 animate-in fade-in slide-in-from-left-8 duration-1000 delay-200">
-              We replace fragmented, manual processes with a unified platform. Experience unparalleled tracking, SEO insights, and team management that scales effortlessly with your business.
-            </p>
-
-            <ul className="space-y-4 text-left w-full lg:w-auto px-4 sm:px-8 lg:px-0 animate-in fade-in slide-in-from-left-8 duration-1000 delay-300">
-              {[
-                "Comprehensive project tracking and grids",
-                "Real-time monthly backlink analytics",
-                "Dedicated team support system"
-              ].map((item, idx) => (
-                <li key={idx} className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-[#2dd4bf] shrink-0" />
-                  <span className="text-gray-300 text-sm md:text-lg">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="flex-1 relative w-full max-w-md lg:max-w-none animate-in fade-in slide-in-from-right-8 duration-1000">
-            {/* Conceptual Visual Graphic */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#4de172]/20 to-[#2dd4bf]/20 rounded-full blur-3xl" />
-            <div className="relative h-full w-full border border-white/10 bg-[#0a0a0f]/50 backdrop-blur-xl rounded-3xl overflow-hidden flex items-center justify-center shadow-2xl">
-              <div>
-                <Image
-                  src={SiteFeatureImage}
-                  alt="Solution Presentation"
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto object-fit transition-transform duration-700 group-hover:scale-[1.08] md:group-hover:scale-110"
-                  priority
-                />
+        <Reveal delay={100} duration={1000} direction="up">
+          <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16 mb-16 md:mb-24 max-w-7xl mx-auto">
+            <div className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#4de172]/10 border border-[#4de172]/20 backdrop-blur-md mb-6 text-xs sm:text-sm">
+                <span className="w-2 h-2 rounded-full bg-[#4de172] animate-pulse shadow-[0_0_10px_#4de172]" />
+                <span className="font-medium text-[#4de172]">The Solution</span>
               </div>
 
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight mb-4 md:mb-6">
+                Transform Complexity into <br className="hidden md:block" />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4de172] to-[#2dd4bf] block md:inline mt-2 md:mt-0">Clarity with Team Ranker</span>
+              </h2>
+
+              <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed mb-8 px-4 lg:px-0">
+                We replace fragmented, manual processes with a unified platform. Experience unparalleled tracking, SEO insights, and team management that scales effortlessly with your business.
+              </p>
+
+              <ul className="space-y-4 text-left w-full lg:w-auto px-4 sm:px-8 lg:px-0">
+                {[
+                  "Comprehensive project tracking and grids",
+                  "Real-time monthly backlink analytics",
+                  "Dedicated team support system"
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-3">
+                    <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-[#2dd4bf] shrink-0" />
+                    <span className="text-gray-300 text-sm md:text-lg">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="flex-1 relative w-full max-w-md lg:max-w-none">
+              {/* Conceptual Visual Graphic */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#4de172]/20 to-[#2dd4bf]/20 rounded-full blur-3xl" />
+              <div className="relative h-full w-full border border-white/10 bg-[#0a0a0f]/50 backdrop-blur-xl rounded-3xl overflow-hidden flex items-center justify-center shadow-2xl">
+                <div>
+                  <Image
+                    src={SiteFeatureImage}
+                    alt="Solution Presentation"
+                    width={1200}
+                    height={800}
+                    className="w-full h-auto object-fit transition-transform duration-700 group-hover:scale-[1.08] md:group-hover:scale-110"
+                    priority
+                  />
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
+        </Reveal>
 
         {/* Feature Grid inside Solution */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
           {solutions.map((solution, index) => (
-            <div
-              key={index}
-              className={`group relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 hover:-translate-y-1 ${solution.glow}`}
-            >
-              <div className="flex items-start gap-6">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-gradient-to-r group-hover:from-[#4de172]/20 group-hover:to-[#2dd4bf]/20 transition-all">
-                  <solution.icon className="w-7 h-7 text-white group-hover:text-[#4de172] transition-colors" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#4de172] group-hover:to-[#2dd4bf] transition-colors">
-                    {solution.title}
-                  </h3>
-                  <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
-                    {solution.description}
-                  </p>
+            <Reveal key={index} delay={index * 100} duration={800} direction="up">
+              <div
+                className={`group relative h-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 hover:-translate-y-1 ${solution.glow}`}
+              >
+                <div className="flex items-start gap-6">
+                  <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/5 to-white/10 border border-white/10 flex items-center justify-center shrink-0 group-hover:bg-gradient-to-r group-hover:from-[#4de172]/20 group-hover:to-[#2dd4bf]/20 transition-all">
+                    <solution.icon className="w-7 h-7 text-white group-hover:text-[#4de172] transition-colors" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#4de172] group-hover:to-[#2dd4bf] transition-colors">
+                      {solution.title}
+                    </h3>
+                    <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                      {solution.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
 
